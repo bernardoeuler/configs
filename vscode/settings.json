@@ -1,0 +1,178 @@
+{
+  // Breadcrumbs
+  "breadcrumbs.enabled": false,
+  // Diff editor
+  "diffEditor.renderSideBySide": false,
+  // Editor
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingComments": "beforeWhitespace",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.detectIndentation": false,
+  "editor.emptySelectionClipboard": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.formatOnSave": true,
+  "editor.guides.indentation": false,
+  "editor.hover.delay": 500,
+  "editor.hover.sticky": false,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.lineHeight": 2,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "alt",
+  "editor.occurrencesHighlight": "off",
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "none",
+  "editor.selectionHighlight": true,
+  "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "top",
+  "editor.stickyScroll.enabled": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  // Explorer
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrder": "type",
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+  // Files
+  "files.associations": {
+    ".dev.vars": "dotenv",
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css"
+  },
+  "files.encoding": "utf8",
+  "files.enableTrash": true,
+  "files.insertFinalNewline": false,
+  "files.trimTrailingWhitespace": true,
+  // Git scm
+  "scm.diffDecorations": "none",
+  // Notebook
+  "notebook.output.wordWrap": true,
+  // Security
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  // Terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 3,
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono'",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.tabs.enabled": false,
+  // VS Code update
+  "update.mode": "default",
+  "update.showReleaseNotes": false,
+  // Window
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+  "window.newWindowDimensions": "inherit",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+  // Workbench
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {
+    "[Hyper Dracula]": {
+      "editorStickyScroll.shadow": "#120f18",
+      "titleBar.activeBackground": "#0C0A0F"
+    },
+    "button.background": "#383342",
+    "button.foreground": "#ffffff",
+    "button.hoverBackground": "#4e4a57",
+    "editor.background": "#120f18",
+    "editorCursor.foreground": "#BD93F9",
+    "editorGroupHeader.noTabsBackground": "#120f18",
+    "editorGroupHeader.tabsBackground": "#0C0A0F",
+    "editorGroupHeader.tabsBorder": "#120f18",
+    "editor.lineHighlightBackground": "#221d2e",
+    "editorSuggestWidget.background": "#000000",
+    "editorWidget.background": "#1e1a29",
+    "input.background": "#140E1A",
+    "input.foreground": "#cdccce",
+    "list.activeSelectionBackground": "#221d2e",
+    "list.focusBackground": "#221d2e",
+    "list.hoverBackground": "#221d2e",
+    "list.inactiveSelectionBackground": "#221d2e",
+    "notifications.background": "#1e1a29",
+    "panelStickyScroll.shadow": "#120f18",
+    "panelTitle.activeBorder": "#913DC9",
+    "sideBar.background": "#120f18",
+    "sideBarStickyScroll.shadow": "#120f18",
+    "tab.activeBackground": "#120f18",
+    "tab.inactiveBackground": "#0C0A0F",
+    "terminal.ansiBlack": "#120F18",
+    "terminal.ansiBlue": "#0087FA",
+    "terminal.ansiBrightBlack": "#4E4A57",
+    "terminal.ansiBrightBlue": "#0087FA",
+    "terminal.ansiBrightCyan": "#7C90EB",
+    "terminal.ansiBrightGreen": "#50FA7B",
+    "terminal.ansiBrightMagenta": "#913DC9",
+    "terminal.ansiBrightRed": "#E06C75",
+    "terminal.ansiBrightWhite": "#DCDFE4",
+    "terminal.ansiBrightYellow": "#FFB86C",
+    "terminal.ansiCyan": "#7C90EB",
+    "terminal.ansiGreen": "#50FA7B",
+    "terminal.ansiMagenta": "#913DC9",
+    "terminal.ansiRed": "#E06C75",
+    "terminal.ansiWhite": "#DCDFE4",
+    "terminal.ansiYellow": "#FFB86C",
+    "terminal.background": "#120F18",
+    "terminalCursor.foreground": "#913DC9"
+  },
+  "workbench.colorTheme": "Hyper Dracula",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.iconTheme": "symbols",
+  "workbench.layoutControl.enabled": false,
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.tree.renderIndentGuides": "none",
+  // Third-party settings
+  // Symbols extension
+  "symbols.hidesExplorerArrows": false,
+  // Animations
+  "animations.Enabled": true,
+  "animations.Install-Method": "Apc Customize UI++",
+  // Apc Customize UI++
+  "apc.font.family": "Inter",
+  "apc.header": {
+    "height": 40
+  },
+  "apc.listRow": {
+    "height": 32,
+    "lists": [
+      "explorer-folders-view",
+      "quick-input-list",
+      "results"
+    ]
+  },
+  "apc.sidebar.titlebar": {
+    "height": 40
+  },
+  "apc.stylesheet": {
+    ":root": "--titlebar-font-size: 12px !important",
+    ".custom-sidebar-titlebar .sidebar .title .monaco-action-bar .action-item .codicon": "--size: calc(var(--titlebar-font-size) * 1.5)",
+    ".monaco-icon-label": "display: flex !important; align-items: center !important;",
+    ".sidebar": "border: none !important",
+    ".sidebar .actions-container .action-item:last-child": "display: none",
+    ".title-label h2": "color: #ff79c6 !important; font-weight: bold !important",
+    ".monaco-list.list_id_1 .monaco-list-row": "outline: none !important"
+  }
+}
