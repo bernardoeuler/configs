@@ -69,7 +69,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 3,
-  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono'",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.gpuAcceleration": "on",
@@ -174,5 +174,8 @@
     ".sidebar .actions-container .action-item:last-child": "display: none",
     ".title-label h2": "color: #ff79c6 !important; font-weight: bold !important",
     ".monaco-list.list_id_1 .monaco-list-row": "outline: none !important"
-  }
+  },
+  "apc.imports": [
+    "file:///c:/Users/berna/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+  ]
 }
