@@ -46,7 +46,7 @@
         "face": "JetBrainsMono Nerd Font Mono",
         "size": 16.0
       },
-      "opacity": 95,
+      "opacity": 20,
       "startingDirectory": "%USERPROFILE%",
       "useAcrylic": true
     },
@@ -327,5 +327,5 @@
     }
   ],
   "themes": [],
-  "useAcrylicInTabRow": false
+  "useAcrylicInTabRow": true
 }
