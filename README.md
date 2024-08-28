@@ -42,3 +42,17 @@ Settings to apply to your Linux user's home to make it look better and add some 
     ```
 
 8. Enjoy!
+
+
+## WSL settings
+Settings to apply to /etc directory.
+
+1. Clone `wsl.conf` file into /etc directory
+    ```zsh
+    sudo curl https://raw.githubusercontent.com/bernardoeuler/configs/main/wsl/wsl.conf -o /etc/wsl.conf
+    ```
+
+2. Terminate the distribution you are running and start again for the changes to take effect
+    ```cmd
+    wsl -t Ubuntu
+    ```
