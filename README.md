@@ -2,6 +2,8 @@
 This walkthrough teaches how to set up a development environment with my personal settings. In this guide, I will use Ubuntu via WSL2, running on Windows 11.
 
 ## Linux setup (Ubuntu)
+Settings to apply to your Linux user's home to make it look better and add some features to the shell.
+
 1. Install zsh
     ```zsh
     sudo apt install -y zsh
