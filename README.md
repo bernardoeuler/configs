@@ -44,6 +44,44 @@ Settings to apply to your Linux user's home to make it look better and add some 
 8. Enjoy!
 
 
+## VS Code settings
+Settings to apply to VS Code, either on WIndows or Linux.
+
+1. Install extensions
+
+   1.1. Windows:
+    ```cmd
+    curl -O --output-dir %USERPROFILE% https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/install-vscode-extensions.bat && %USERPROFILE%\install-vscode-extensions.bat && del %USERPROFILE%\install-vscode-extensions.bat
+    ```
+   1.2. Linux:
+    ```zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/install-vscode-extensions.sh)"
+    ```
+
+3. Overwrite default settings (Windows)
+    ```cmd
+    curl -O --output-dir %APPDATA%\Code\User https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/settings.json
+    ```
+
+4. Overwrite default keyboard shortcuts (Windows)
+    ```cmd
+    curl -O --output-dir %APPDATA%\Code\User https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/keybindings.json
+    ```
+
+### Uninstall extensions
+If you want to uninstall all extensions installed before, follow these steps.
+
+1. Windows:
+    ```cmd
+    curl -O --output-dir %USERPROFILE% https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/uninstall-vscode-extensions.bat && %USERPROFILE%\uninstall-vscode-extensions.bat && del %USERPROFILE%\uninstall-vscode-extensions.bat
+    ```
+
+2. Linux:
+    ```zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/uninstall-vscode-extensions.sh)"
+    ```
+
+
 ## WSL settings
 Settings to apply to /etc directory.
 
