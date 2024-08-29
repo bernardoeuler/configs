@@ -82,6 +82,15 @@ If you want to uninstall all extensions installed before, follow these steps.
     ```
 
 
+## Windows Terminal settings
+Settings for Windows Terminal, such as color scheme, appearance and so on.
+
+1. Overwrite default settings
+    ```cmd
+    curl -O --output-dir %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState https://raw.githubusercontent.com/bernardoeuler/configs/main/windows-terminal/settings.json
+    ```
+
+
 ## WSL settings
 Settings to apply to /etc directory.
 
