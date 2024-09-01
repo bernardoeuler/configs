@@ -89,17 +89,3 @@ Settings for Windows Terminal, such as color scheme, appearance and so on.
     ```cmd
     curl -O --output-dir %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState https://raw.githubusercontent.com/bernardoeuler/configs/main/windows-terminal/settings.json
     ```
-
-
-## WSL settings
-Settings to apply to /etc directory.
-
-1. Clone `wsl.conf` file into /etc directory
-    ```zsh
-    sudo curl https://raw.githubusercontent.com/bernardoeuler/configs/main/wsl/wsl.conf -o /etc/wsl.conf
-    ```
-
-2. Terminate the distribution you are running and start again for the changes to take effect
-    ```cmd
-    wsl -t Ubuntu
-    ```
