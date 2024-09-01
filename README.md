@@ -57,6 +57,10 @@ Settings to apply to VS Code, either on WIndows or Linux.
     ```zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/install-vscode-extensions.sh)"
     ```
+   1.3. WSL:
+    ```zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/install-vscode-extensions-wsl.sh)"
+    ```
 
 3. Overwrite default settings (Windows)
     ```cmd
@@ -79,6 +83,11 @@ If you want to uninstall all extensions installed before, follow these steps.
 2. Linux:
     ```zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/uninstall-vscode-extensions.sh)"
+    ```
+
+3. WSL:
+    ```zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/bernardoeuler/configs/main/vscode/uninstall-vscode-extensions-wsl.sh)"
     ```
 
 
