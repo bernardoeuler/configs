@@ -13,7 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Environment variables to load on initialization
 export YSU_MESSAGE_POSITION="after"
-export YSU_MESSAGE_FORMAT="$(tput setaf 1)Use the %alias_type %alias$(tput sgr0)"
+export YSU_MESSAGE_FORMAT="$(tput setaf 3)Use the %alias_type %alias$(tput sgr0)"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
