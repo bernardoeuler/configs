@@ -5,7 +5,7 @@
     "background": "#0f0316",
     "foreground": "##f8f8f2",
     "black": "#0f0316",
-    "blue": "#179fff",
+    "blue": "#33aaff",
     "cyan": "#8be9fd",
     "green": "#51e186",
     "purple": "#ff79c6",
@@ -26,14 +26,14 @@
     "red": "#e06c75",
     "yellow": "#f1fa8c",
     "green": "#51e186",
-    "blue": "#179fff",
+    "blue": "#33aaff",
     "purple": "#bd93f9",
     "cyan": "#8be9fd",
     "pink": "#ff79c6",
     "white": "##f8f8f2",
     "bracket1": "#ffd700",
     "bracket2": "#da70d6",
-    "bracket3": "#179fff",
+    "bracket3": "#33aaff",
     "orange": "#ffb86c"
   }
 }
