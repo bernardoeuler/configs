@@ -45,7 +45,7 @@ Settings to apply to your Linux user's home to make it look better and add some 
 
 8. Start a new terminal session or run the following command
     ```zsh
-    source .zshrc
+    source $ZDOTDIR/.zshrc
     ```
 
 9. Enjoy!
