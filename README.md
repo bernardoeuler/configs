@@ -4,9 +4,10 @@ This walkthrough teaches how to set up a development environment with my persona
 ## Linux setup (Ubuntu)
 Settings to apply to your Linux user's home to make it look better and add some features to the shell.
 
-1. Clone `.zshenv` to home directory
+1. Clone `.zshenv` to home directory and source
     ```zsh
     curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.zshenv
+    source ~/.zshenv
     ```
 
 2. Install zsh
