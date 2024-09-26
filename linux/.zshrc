@@ -23,7 +23,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use asdf sud
 source $ZSH/oh-my-zsh.sh
 
 # Load Powerlevel10k
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ${ZDOTDIR:-~}/.p10k.zsh ]] || source ${ZDOTDIR:-~}/.p10k.zsh
 
 # Load asdf-direnv
 if [[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" ]]; then
