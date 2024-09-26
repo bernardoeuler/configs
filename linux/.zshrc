@@ -7,7 +7,7 @@ fi
 export ZSH="$ZDOTDIR/ohmyzsh"
 
 # Path to Oh My Zsh custom plugins folder.
-export ZSH_CUSTOM=$ZDOTDIR/ohmyzsh/custom
+export ZSH_CUSTOM=$ZSH/custom
 
 # Environment variables to load on initialization
 export YSU_MESSAGE_POSITION="after"
