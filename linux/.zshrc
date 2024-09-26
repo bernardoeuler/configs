@@ -6,6 +6,9 @@ fi
 # Path to Oh My Zsh installation.
 export ZSH="$ZDOTDIR/ohmyzsh"
 
+# Path to Oh My Zsh custom plugins folder.
+export ZSH_CUSTOM=$ZDOTDIR/ohmyzsh/custom
+
 # Environment variables to load on initialization
 export YSU_MESSAGE_POSITION="after"
 export YSU_MESSAGE_FORMAT="$(tput setaf 3)Use the %alias_type %alias$(tput sgr0)"
