@@ -35,7 +35,7 @@ Settings to apply to your Linux user's home to make it look better and add some 
 
 6. Clone .zshrc into the user's home (to use my personal settings)
     ```zsh
-    curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.zshrc
+    curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.zshrc --output-dir $ZDOTDIR
     ```
 
 7. Clone .p10k.zsh into the user's home (to use my personal settings)
