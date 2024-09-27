@@ -29,3 +29,6 @@ source $ZSH/oh-my-zsh.sh
 if [[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" ]]; then
     source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 fi
+
+# Create directory for Zsh state files if it doesn't exist
+[[ -d $XDG_STATE_HOME/zsh ]] || mkdir -p $XDG_STATE_HOME/zsh
