@@ -43,12 +43,20 @@ Settings to apply to your Linux user's home to make it look better and add some 
     curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.p10k.zsh --output-dir $ZDOTDIR
     ```
 
-8. Start a new terminal session or run the following command
+8. Clone `tmux.conf` file and set up plugins
+    ```zsh
+    mkdir -p $XDG_CONFIG_HOME/tmux
+    curl https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/tmux.conf -o $XDG_CONFIG_HOME/tmux/tmux.conf
+    git clone https://github.com/tmux-plugins/tpm $XDG_DATA_HOME/tmux/plugins/tpm
+    $XDG_DATA_HOME/tmux/plugins/tpm/bin/install_plugins
+    ```
+
+10. Start a new terminal session or run the following command
     ```zsh
     source $ZDOTDIR/.zshrc
     ```
 
-9. Enjoy!
+11. Enjoy!
 
 
 ## VS Code settings
