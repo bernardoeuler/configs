@@ -26,9 +26,28 @@
 log/
 logs/
 
+# ENVIRONMENT
+.env
+env/
+ENV/
+env.bak/
+
 # VS CODE
 .vscode
+*.code-workspacea
+.history/
 
 # VIM
 *~
 *.swp
+
+# NODE JS
+node_modules/
+
+# PYTHON
+__pycache__/
+.venv/
+venv/
+.venv
+venv
+db.sqlite3
