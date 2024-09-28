@@ -1,0 +1,37 @@
+syntax on
+set number
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=10000
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set nobackup
+set scrolloff=15
+set nowrap
+set incsearch
+set ignorecase
+set smartcase
+set showmode
+set showcmd
+set hlsearch
+set showmatch
+set history=1000
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set autoindent
+set fileformat=unix
+set encoding=UTF-8
+set smarttab
+set smartindent
+set signcolumn=yes
+set sidescrolloff=10
+set noerrorbells visualbell t_vb=
+set noswapfile
+set clipboard=unnamed
+set background=dark
+colorscheme default
+highlight Normal guibg=NONE ctermbg=NONE
+highlight clear SignColumn
