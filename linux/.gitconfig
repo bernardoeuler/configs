@@ -25,6 +25,13 @@
 	new = green bold
 	whitespace = red reverse
 [color "status"]
+	header = white
 	added = green bold
+	updated = green bold
 	changed = red bold
 	untracked = yellow bold
+	branch = magenta
+[color "decorate"]
+	branch = green
+	remoteBranch = cyan
+	HEAD = magenta
