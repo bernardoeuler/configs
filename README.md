@@ -35,18 +35,18 @@ Settings to apply to your Linux user's home to make it look better and add some 
 
 6. Clone .zshrc into the user's home (to use my personal settings)
     ```zsh
-    curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.zshrc --output-dir $ZDOTDIR
+    curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.config/zsh/.zshrc --output-dir $ZDOTDIR
     ```
 
 7. Clone .p10k.zsh into the user's home (to use my personal settings)
     ```zsh
-    curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.p10k.zsh --output-dir $ZDOTDIR
+    curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.config/zsh/.p10k.zsh --output-dir $ZDOTDIR
     ```
 
 8. Clone `tmux.conf` file and set up plugins
     ```zsh
     mkdir -p $XDG_CONFIG_HOME/tmux
-    curl https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/tmux.conf -o $XDG_CONFIG_HOME/tmux/tmux.conf
+    curl https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/tmux/tmux.conf -o $XDG_CONFIG_HOME/tmux/tmux.conf
     git clone https://github.com/tmux-plugins/tpm $XDG_DATA_HOME/tmux/plugins/tpm
     $XDG_DATA_HOME/tmux/plugins/tpm/bin/install_plugins
     ```
