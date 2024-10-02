@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y curl git tmux zsh openssh-client vim gh
+sudo apt install -y curl git tmux zsh openssh-client vim gh gcc
 sudo apt autoremove --purge -y
 sudo apt clean -y
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.zshenv --output-dir $HOME
