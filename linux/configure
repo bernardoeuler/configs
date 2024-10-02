@@ -31,6 +31,7 @@ echo "Generating SSH key for GitHub"
 chmod 700 ~/.ssh
 ssh-keygen -t rsa -f ~/.ssh/github_rsa
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/config --output-dir ~/.ssh
+curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/known_hosts --output-dir ~/.ssh
 echo "Login into your GitHub account"
 gh auth login
 echo "Add permissions to GitHub CLI"
