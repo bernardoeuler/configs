@@ -4,6 +4,13 @@ This walkthrough teaches how to set up a development environment with my persona
 ## Linux setup (Ubuntu)
 Settings to apply to your Linux user's home to make it look better and add some features to the shell.
 
+You can simply run the `configure` script:
+```
+bash -c "$(curl https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/configure)"
+```
+
+or follow this steps:
+
 1. Install zsh
     ```zsh
     sudo apt install -y zsh
