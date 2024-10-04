@@ -32,11 +32,4 @@ chmod 700 ~/.ssh
 ssh-keygen -t rsa -f ~/.ssh/github_rsa
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/config --output-dir ~/.ssh
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/known_hosts --output-dir ~/.ssh
-echo "Login into your GitHub account"
-gh auth login
-echo "Add permissions to GitHub CLI"
-gh auth refresh -h github.com -s repo,delete_repo,user,admin:org,admin:gpg_key,admin:public_key
-read -p "Choose a title for the SSH key on GitHub: " title
-gh ssh-key add .ssh/github_rsa.pub --title $title
-echo "SSH key registered with success"
 zsh
