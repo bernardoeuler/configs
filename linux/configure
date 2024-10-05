@@ -20,6 +20,7 @@ curl https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/lin
 git clone https://github.com/tmux-plugins/tpm $XDG_DATA_HOME/tmux/plugins/tpm
 $XDG_DATA_HOME/tmux/plugins/tpm/bin/install_plugins
 mkdir ~/.vim
+mkdir ~/.vim/undodir
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.vim/vimrc --output-dir ~/.vim
 mkdir $XDG_CONFIG_HOME/git
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/git/config --output-dir $XDG_CONFIG_HOME/git
