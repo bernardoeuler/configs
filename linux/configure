@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y curl git tmux zsh openssh-client vim gh gcc
+sudo apt install -y curl git tmux zsh openssh-client vim gh gcc ninja-build gettext cmake unzip build-essential
 sudo apt autoremove --purge -y
 sudo apt clean -y
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.zshenv --output-dir $HOME
@@ -32,4 +32,10 @@ chmod 700 ~/.ssh
 ssh-keygen -t rsa -f ~/.ssh/github_rsa
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/config --output-dir ~/.ssh
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/known_hosts --output-dir ~/.ssh
+git clone https://github.com/neovim/neovim ~/neovim
+cd ~/neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.local/share/neovim"
+make install
+cd $HOME
+LV_BRANCH="release-1.4/neovim-0.9" bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 zsh
