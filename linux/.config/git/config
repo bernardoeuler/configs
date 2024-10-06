@@ -33,5 +33,5 @@
 	branch = magenta
 [color "decorate"]
 	branch = green
-	remoteBranch = cyan
+	remoteBranch = blue
 	HEAD = magenta
