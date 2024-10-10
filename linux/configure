@@ -44,6 +44,9 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/
 # Install ASDF
 git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR
 
+# Install ASDF Python plugin
+$ASDF_DIR/bin/asdf plugin add python
+
 # Download .zshrc and .p10k.zsh
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.config/zsh/.zshrc --output-dir $ZDOTDIR
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.config/zsh/.p10k.zsh --output-dir $ZDOTDIR
