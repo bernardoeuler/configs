@@ -9,7 +9,7 @@ sudo apt upgrade -y
 # Install basic packages
 sudo apt install -y curl gcc git gh openssh-client tmux vim zsh
 
-# Install build packages
+# Install Neovim's build packages
 sudo apt install -y build-essential cmake gettext ninja-build unzip
 
 # Install Python's build packages (required, optional)
