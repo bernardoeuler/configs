@@ -45,22 +45,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
 
-# Install ASDF
-git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR
-
-# Install ASDF plugins
-$ASDF_DIR/bin/asdf plugin add python
-$ASDF_DIR/bin/asdf plugin add nodejs
-
-# Install desired Python versions
-$ASDF_DIR/bin/asdf install python latest
-$ASDF_DIR/bin/asdf install python latest:3.12
-$ASDF_DIR/bin/asdf install python latest:2
-
-# Install desired Node.js versions
-$ASDF_DIR/bin/asdf install nodejs latest
-$ASDF_DIR/bin/asdf install nodejs latest:20
-
 # Download .zshrc and .p10k.zsh
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.config/zsh/.zshrc --output-dir $ZDOTDIR
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.config/zsh/.p10k.zsh --output-dir $ZDOTDIR
@@ -81,6 +65,12 @@ mkdir $XDG_CONFIG_HOME/git
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/git/config --output-dir $XDG_CONFIG_HOME/git
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/git/ignore --output-dir $XDG_CONFIG_HOME/git
 
+# Generate new SSH key for GitHub
+echo "Generating SSH key for GitHub"
+[[ -d ~/.ssh ]] || mkdir ~/.ssh
+chmod 700 ~/.ssh
+ssh-keygen -t rsa -f ~/.ssh/github_rsa
+
 # Set up ssh config and known hosts
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/config --output-dir ~/.ssh
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/known_hosts --output-dir ~/.ssh
@@ -98,11 +88,21 @@ ln -s $HOME/.local/share/neovim/bin/nvim $HOME/.local/bin/nvim
 # Install LunarVim
 LV_BRANCH="release-1.4/neovim-0.9" bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 
-# Generate new SSH key for GitHub
-echo "Generating SSH key for GitHub"
-[[ -d ~/.ssh ]] || mkdir ~/.ssh
-chmod 700 ~/.ssh
-ssh-keygen -t rsa -f ~/.ssh/github_rsa
+# Install ASDF
+git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR
+
+# Install ASDF plugins
+$ASDF_DIR/bin/asdf plugin add python
+$ASDF_DIR/bin/asdf plugin add nodejs
+
+# Install desired Python versions
+$ASDF_DIR/bin/asdf install python latest
+$ASDF_DIR/bin/asdf install python latest:3.12
+$ASDF_DIR/bin/asdf install python latest:2
+
+# Install desired Node.js versions
+$ASDF_DIR/bin/asdf install nodejs latest
+$ASDF_DIR/bin/asdf install nodejs latest:20
 
 # Change default shell to Zsh
 echo "Change default shell to zsh"
