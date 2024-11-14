@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+
+if [[ ! $1 = "--skip-errors" ]]; then
+    set -e
+fi
+
+# Uninstall basic packages
+sudo apt remove -y curl gcc git gh openssh-client tmux vim zsh
+
+# Uninstall Neovim's build packages
+sudo apt remove -y build-essential cmake gettext ninja-build unzip
+
+# Uninstall Python's build packages (required, optional)
+sudo apt remove -y libssl-dev zlib1g-dev
+sudo apt remove -y libbz2-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libreadline-dev libsqlite3-dev tk-dev uuid-dev
+
+# Uninstall WSL utilities, if in WSL
+[[ -f /etc/wsl.conf ]] && sudo apt remove -y wslu
+
+# Uninstall Zsh and related
+[[ -d $ZDOTDIR ]] && rm -rf $ZDOTDIR
+
+#Uninstall Oh My Zsh and related
+[[ -d $HOME/.oh-my-zsh ]] && rm -rf $HOME/oh-my-zsh
+
+# Uninstall .zshrc and .p10k.zsh
+[[ -f $HOME/.p10k.zsh ]] && rm .p10k.zsh 
+[[ -f $HOME/.zshrc ]] && rm .zshrc 
+
+# Uninstall Tmux and its plugins
+[[ -d $XDG_CONFIG_HOME/tmux ]] && rm -rf $XDG_CONFIG_HOME/tmux
+[[ -d $XDG_DATA_HOME/tmux/ ]] && rm -rf $XDG_DATA_HOME/tmux/
+
+# Delete vim configuration files
+rm -rf ~/.vim
+
+# Delete git configuration files
+rm -rf $XDG_CONFIG_HOME/git
+
+# Delete SSH key for GitHub
+[[ -f ~/.ssh/github_rsa ]] && rm ~/.ssh/github_rsa ~/.ssh/github_rsa.pub
+
+# Delete ssh config and known hosts
+rm ~/.ssh/known_hosts ~/.ssh/config
+
+# Uninstall Neovim
+rm -rf ~/neovim
+rm -rf $HOME/.local/share/neovim $HOME/.local/bin/nvim
+
+# TODO Uninstall LunarVim
+
+# Uninstall ASDF plugins
+$ASDF_DIR/bin/asdf plugin remove python
+$ASDF_DIR/bin/asdf plugin remove nodejs
+
+# Uninstall desired Python versions
+$ASDF_DIR/bin/asdf uninstall python latest
+$ASDF_DIR/bin/asdf uninstall python latest:3.12
+$ASDF_DIR/bin/asdf uninstall python latest:2
+
+# Uninstall desired Node.js versions
+$ASDF_DIR/bin/asdf uninstall nodejs latest
+$ASDF_DIR/bin/asdf uninstall nodejs latest:20
+
+# Uninstall ASDF
+rm -rf $ASDF_DIR
+
+# Change default shell to Bash
+echo "Change default shell to bash"
+chsh -s /usr/bin/bash
+
+# Launch Bash and start new terminal session
+bash
