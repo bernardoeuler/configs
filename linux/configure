@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-set -e
+if [[ ! $1 = "--skip-errors" ]]; then
+    set -e
+fi
 
 # Update packages
 sudo apt update
