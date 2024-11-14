@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ ! $1 = "--skip-errors" ]]; then
+if [[ ! $1 == "--skip-errors" ]]; then
     set -e
 fi
 
@@ -18,7 +18,7 @@ sudo apt remove -y libbz2-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-de
 [[ -f /etc/wsl.conf ]] && sudo apt remove -y wslu
 
 # Uninstall Zsh and related
-[[ -d $ZDOTDIR ]] && rm -rf $ZDOTDIR
+[[ -v ZDOTDIR && -d $ZDOTDIR ]] && rm -rf $ZDOTDIR
 
 #Uninstall Oh My Zsh and related
 [[ -d $HOME/.oh-my-zsh ]] && rm -rf $HOME/oh-my-zsh
@@ -28,26 +28,31 @@ sudo apt remove -y libbz2-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-de
 [[ -f $HOME/.zshrc ]] && rm .zshrc 
 
 # Uninstall Tmux and its plugins
-[[ -d $XDG_CONFIG_HOME/tmux ]] && rm -rf $XDG_CONFIG_HOME/tmux
-[[ -d $XDG_DATA_HOME/tmux/ ]] && rm -rf $XDG_DATA_HOME/tmux/
+[[ -v XDG_CONFIG_HOME && -d $XDG_CONFIG_HOME/tmux ]] && rm -rf $XDG_CONFIG_HOME/tmux
+[[ -v XDG_DATA_HOME && -d $XDG_DATA_HOME/tmux/ ]] && rm -rf $XDG_DATA_HOME/tmux/
 
 # Delete vim configuration files
-rm -rf ~/.vim
+[[ -d ~/.vim ]] && rm -rf ~/.vim
 
 # Delete git configuration files
-rm -rf $XDG_CONFIG_HOME/git
+[[ -v XDG_CONFIG_HOME && -d $XDG_CONFIG_HOME/git ]] && rm -rf $XDG_CONFIG_HOME/git
 
 # Delete SSH key for GitHub
-[[ -f ~/.ssh/github_rsa ]] && rm ~/.ssh/github_rsa ~/.ssh/github_rsa.pub
+[[ -f ~/.ssh/github_rsa ]] && rm ~/.ssh/github_rsa
+[[ -f ~/.ssh/github_rsa.pub ]] && rm ~/.ssh/github_rsa.pub
 
 # Delete ssh config and known hosts
-rm ~/.ssh/known_hosts ~/.ssh/config
+[[ -f ~/.ssh/known_hosts ]] && rm ~/.ssh/known_hosts
+[[ -f ~/.ssh/config ]] && rm ~/.ssh/config
 
 # Uninstall Neovim
-rm -rf ~/neovim
-rm -rf $HOME/.local/share/neovim $HOME/.local/bin/nvim
+[[ -d ~/neovim ]] && rm -rf ~/neovim
+[[ -d ~/.local/share/neovim ]] && rm -rf $HOME/.local/share/neovim
+[[ -f ~/.local/bin/nvim ]] && $HOME/.local/bin/nvim
 
 # TODO Uninstall LunarVim
+
+if [[ -v ASDF_DIR && -d $ASDF_DIR ]]; then
 
 # Uninstall ASDF plugins
 $ASDF_DIR/bin/asdf plugin remove python
@@ -64,6 +69,8 @@ $ASDF_DIR/bin/asdf uninstall nodejs latest:20
 
 # Uninstall ASDF
 rm -rf $ASDF_DIR
+
+fi
 
 # Change default shell to Bash
 echo "Change default shell to bash"
