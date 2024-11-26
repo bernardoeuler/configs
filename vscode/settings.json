@@ -36,7 +36,7 @@
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.stickyScroll.enabled": true,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 120,
   // Explorer
