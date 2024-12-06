@@ -69,6 +69,8 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorWidth": 3,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono'",
     "terminal.integrated.fontSize": 14,
