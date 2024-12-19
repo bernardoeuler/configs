@@ -15,6 +15,15 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.scrolloff = 15
 vim.opt.sidescrolloff = 10
+vim.opt.softtabstop = 4
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.smartindent = true
+vim.opt.wildmode = "list:longest"
+vim.opt.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"
+vim.opt.fileformat = "unix"
+vim.opt.smartindent = true
+
 
 lvim.autocommands = {
   {
