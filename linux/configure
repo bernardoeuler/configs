@@ -88,6 +88,9 @@ ln -s $HOME/.local/share/neovim/bin/nvim $HOME/.local/bin/nvim
 # Install LunarVim
 LV_BRANCH="release-1.4/neovim-0.9" bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 
+# Import personal settings
+curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/lvim/config.lua --output-dir $XDG_CONFIG_HOME/lvim
+
 # Install ASDF
 git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR
 
