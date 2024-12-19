@@ -23,7 +23,7 @@ vim.opt.wildmode = "list:longest"
 vim.opt.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"
 vim.opt.fileformat = "unix"
 vim.opt.smartindent = true
-
+vim.opt.wrap = true
 
 lvim.autocommands = {
   {
