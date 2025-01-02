@@ -149,32 +149,4 @@
     // Third-party settings
     // Symbols extension
     "symbols.hidesExplorerArrows": false,
-    // Animations
-    "animations.Enabled": true,
-    "animations.Install-Method": "Apc Customize UI++",
-    // Apc Customize UI++
-    "apc.font.family": "Inter",
-    "apc.header": {
-        "height": 40
-    },
-    "apc.listRow": {
-        "height": 32,
-        "lists": [
-            "explorer-folders-view",
-            "quick-input-list",
-            "results"
-        ]
-    },
-    "apc.sidebar.titlebar": {
-        "height": 40
-    },
-    "apc.stylesheet": {
-        ":root": "--titlebar-font-size: 12px !important",
-        ".custom-sidebar-titlebar .sidebar .title .monaco-action-bar .action-item .codicon": "--size: calc(var(--titlebar-font-size) * 1.5)",
-        ".monaco-icon-label": "display: flex !important; align-items: center !important;",
-        ".sidebar": "border: none !important",
-        ".sidebar .actions-container .action-item:last-child": "display: none",
-        ".title-label h2": "color: #ff79c6 !important; font-weight: bold !important",
-        ".monaco-list.list_id_1 .monaco-list-row": "outline: none !important"
-    }
 }
