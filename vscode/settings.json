@@ -147,6 +147,8 @@
     "workbench.tree.enableStickyScroll": true,
     "workbench.tree.renderIndentGuides": "none",
     // Third-party settings
+    // C/C++ extension
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, AlignAfterOpenBracket: Align, AllowAllParametersOfDeclarationOnNextLine: false, AllowShortBlocksOnASingleLine: Empty, AllowShortFunctionsOnASingleLine: Empty, AlwaysBreakBeforeMultilineStrings: false, BinPackArguments: false, BinPackParameters: false, ColumnLimit: 100, IndentWidth: 4}"
     // Code Runner extension
     "code-runner.ignoreSelection": true,
     "code-runner.preserveFocus": false,
