@@ -147,6 +147,11 @@
     "workbench.tree.enableStickyScroll": true,
     "workbench.tree.renderIndentGuides": "none",
     // Third-party settings
+    // Code Runner extension
+    "code-runner.ignoreSelection": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
     // Symbols extension
     "symbols.hidesExplorerArrows": false,
 }
