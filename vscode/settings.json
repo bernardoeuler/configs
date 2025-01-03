@@ -23,7 +23,7 @@
     "editor.hover.delay": 500,
     "editor.hover.sticky": false,
     "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.lineHeight": 2,
+    "editor.lineHeight": 1.75,
     "editor.linkedEditing": true,
     "editor.matchBrackets": "never",
     "editor.minimap.enabled": false,
