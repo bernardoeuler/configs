@@ -25,6 +25,9 @@ source $ZSH/oh-my-zsh.sh
 # Load Powerlevel10k
 [[ ! -f ${ZDOTDIR:-~}/.p10k.zsh ]] || source ${ZDOTDIR:-~}/.p10k.zsh
 
+# Add asdf to PATH
+export PATH=$ASDF_DIR/bin:$PATH
+
 # Load asdf-direnv
 if [[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" ]]; then
     source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
