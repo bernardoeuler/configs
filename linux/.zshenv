@@ -8,4 +8,4 @@ export ASDF_DIR="$XDG_DATA_HOME/asdf"
 export ASDF_DATA_DIR="$ASDF_DIR"
 ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 export EDITOR="vim"
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$ASDF_DIR/bin:$PATH
