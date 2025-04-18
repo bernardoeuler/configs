@@ -92,17 +92,21 @@ fi
 mv $ASDF_TEMP_DIR/asdf $HOME/.local/bin
 
 # Install ASDF plugins
-$ASDF_DIR/bin/asdf plugin add python
-$ASDF_DIR/bin/asdf plugin add nodejs
+asdf plugin add python
+asdf plugin add nodejs
 
 # Install desired Python versions
-$ASDF_DIR/bin/asdf install python latest
-$ASDF_DIR/bin/asdf install python latest:3.12
-$ASDF_DIR/bin/asdf install python latest:2
+asdf install python latest
+asdf install python latest:3.12
+asdf install python latest:2
 
 # Install desired Node.js versions
-$ASDF_DIR/bin/asdf install nodejs latest
-$ASDF_DIR/bin/asdf install nodejs latest:20
+asdf install nodejs latest
+asdf install nodejs latest:22
+
+# Set asdf tools versions
+asdf set -u python latest:3.12 
+asdf set -u nodejs latest:22 
 
 # Set up ssh config and known hosts
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/config --output-dir ~/.ssh
