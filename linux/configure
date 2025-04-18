@@ -83,7 +83,13 @@ LV_BRANCH="release-1.4/neovim-0.9" bash <(curl -s https://raw.githubusercontent.
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/lvim/config.lua --output-dir $XDG_CONFIG_HOME/lvim
 
 # Install ASDF
-git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR
+ASDF_TEMP_DIR=$HOME/Downloads/.asdf-temp
+sudo curl -s https://api.github.com/repos/asdf-vm/asdf/releases/latest | grep "browser_download_url.*linux-amd64.tar.gz" | cut -d : -f 2,3 | tr -d \" | wget -q -P $ASDF_TEMP_DIR -i -;
+ASDF_ARCHIVE="$(find $ASDF_TEMP_DIR -iname "asdf*" | grep tar.gz$)"
+if echo $(cat $ASDF_ARCHIVE.md5) $ASDF_ARCHIVE | md5sum --check --status; then
+    tar -xzf $ASDF_ARCHIVE -C $ASDF_TEMP_DIR
+fi
+mv $ASDF_TEMP_DIR/asdf $HOME/.local/bin
 
 # Install ASDF plugins
 $ASDF_DIR/bin/asdf plugin add python
