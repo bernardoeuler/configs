@@ -35,3 +35,7 @@
 	branch = green
 	remoteBranch = blue
 	HEAD = magenta
+[tag]
+	gpgSign = true
+[commit]
+	gpgsign = true
