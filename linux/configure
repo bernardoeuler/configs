@@ -95,6 +95,7 @@ asdf plugin add python
 asdf plugin add nodejs
 asdf plugin add java
 asdf plugin add direnv
+asdf plugin add rust
 
 # Install desired Python versions
 asdf install python latest
@@ -111,11 +112,15 @@ asdf install java openjdk-17.0.2
 # Install desired Direnv versions
 asdf install direnv 2.36.0
 
+# Install desired Rust versions
+asdf install rust stable
+
 # Set asdf tools versions
 asdf set -u python latest:3.12 
 asdf set -u nodejs latest:22 
 asdf set -u java openjdk-17.0.2
 asdf set -u direnv 2.36.0
+asdf set -u rust stable
 
 # Set up ssh config and known hosts
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/config --output-dir ~/.ssh
