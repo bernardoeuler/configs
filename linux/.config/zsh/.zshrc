@@ -17,7 +17,7 @@ export YSU_MESSAGE_FORMAT="$(tput setaf 3)Use the %alias_type %alias$(tput sgr0)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Oh My Zsh Plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use asdf sudo direnv)
+plugins=(asdf direnv git sudo you-should-use zsh-autosuggestions zsh-syntax-highlighting)
 
 # Load Oh My Zsh
 source $ZSH/oh-my-zsh.sh
