@@ -65,22 +65,6 @@ mkdir $XDG_CONFIG_HOME/git
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/git/config --output-dir $XDG_CONFIG_HOME/git
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/git/ignore --output-dir $XDG_CONFIG_HOME/git
 
-
-# Install Neovim
-git clone https://github.com/neovim/neovim ~/neovim
-cd ~/neovim
-git checkout stable
-make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.local/share/neovim"
-make install
-cd $HOME
-[[ -d $HOME/.local/bin ]] || mkdir $HOME/.local/bin
-ln -s $HOME/.local/share/neovim/bin/nvim $HOME/.local/bin/nvim
-
-# Install LunarVim
-LV_BRANCH="release-1.4/neovim-0.9" bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh) -y
-# Import personal settings
-curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/lvim/config.lua --output-dir $XDG_CONFIG_HOME/lvim
-
 # Install ASDF
 ASDF_TEMP_DIR=$HOME/Downloads/.asdf-temp
 sudo curl -s https://api.github.com/repos/asdf-vm/asdf/releases/latest | grep "browser_download_url.*linux-amd64.tar.gz" | cut -d : -f 2,3 | tr -d \" | wget -q -P $ASDF_TEMP_DIR -i -;
@@ -121,6 +105,22 @@ asdf set -u nodejs latest:22
 asdf set -u java openjdk-17.0.2
 asdf set -u direnv 2.36.0
 asdf set -u rust stable
+
+# Install Neovim
+git clone https://github.com/neovim/neovim ~/neovim
+cd ~/neovim
+git checkout stable
+make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.local/share/neovim"
+make install
+cd $HOME
+[[ -d $HOME/.local/bin ]] || mkdir $HOME/.local/bin
+ln -s $HOME/.local/share/neovim/bin/nvim $HOME/.local/bin/nvim
+
+# Install LunarVim
+LV_BRANCH="release-1.4/neovim-0.9" bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh) -y
+
+# Import personal settings
+curl -O https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/.config/lvim/config.lua --output-dir $XDG_CONFIG_HOME/lvim
 
 # Set up ssh config and known hosts
 curl -O https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/.ssh/config --output-dir ~/.ssh
