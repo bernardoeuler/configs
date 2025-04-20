@@ -72,6 +72,7 @@ ASDF_ARCHIVE="$(find $ASDF_TEMP_DIR -iname "asdf*" | grep tar.gz$)"
 if echo $(cat $ASDF_ARCHIVE.md5) $ASDF_ARCHIVE | md5sum --check --status; then
     tar -xzf $ASDF_ARCHIVE -C $ASDF_TEMP_DIR
 fi
+[[ -d $HOME/.local/bin ]] || mkdir $HOME/.local/bin
 mv $ASDF_TEMP_DIR/asdf $HOME/.local/bin
 
 # Install ASDF plugins
