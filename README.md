@@ -9,12 +9,12 @@ You can simply run the `configure` script to automatically setup your environmen
 
 **Run script terminating on error (recommended):**
 ```
-curl -s https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/configure | bash -s"
+curl -s https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/configure | bash -s
 ```
 
 **Run script skipping errors:**
 ```
-curl -s https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/configure | bash -s -- --skip-errors"
+curl -s https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/configure | bash -s -- --skip-errors
 ```
 
 ### Manual setup
