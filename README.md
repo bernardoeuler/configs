@@ -16,7 +16,7 @@ You can simply run the `configure` script:
     curl -s https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/configure | bash -s -- --skip-errors"
     ```
 
-or follow this steps:
+or follow these steps:
 
 1. Install zsh
     ```zsh
