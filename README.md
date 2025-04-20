@@ -5,9 +5,16 @@ This walkthrough teaches how to set up a development environment with my persona
 Settings to apply to your Linux user's home to make it look better and add some features to the shell.
 
 You can simply run the `configure` script:
-```
-bash -c "$(curl https://raw.githubusercontent.com/bernardoeuler/configs/main/linux/configure)"
-```
+
+1. Run terminating on error:
+    ```
+    curl -s https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/configure | bash -s"
+    ```
+
+2. Run skipping errors:
+    ```
+    curl -s https://raw.githubusercontent.com/bernardoeuler/configs/refs/heads/main/linux/configure | bash -s -- --skip-errors"
+    ```
 
 or follow this steps:
 
