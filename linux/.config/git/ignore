@@ -1,17 +1,16 @@
+# =========================
 # COMPILED FILES
-*.com
+# =========================
 *.class
+*.com
 *.dll
 *.exe
 *.o
 *.so
 
-# TEMPORARY FILES
-*.swp
-*.swo
-*~
-
+# =========================
 # COMPRESSED FILES
+# =========================
 *.7z
 *.dmg
 *.gz
@@ -21,33 +20,67 @@
 *.tar
 *.zip
 
-# LOGS
-*.log
-log/
-logs/
-
+# =========================
 # ENVIRONMENT
+# =========================
 .env
 env/
 ENV/
 env.bak/
+.tool-versions
 
-# VS CODE
-.vscode
-*.code-workspacea
-.history/
+# =========================
+# INTELLIJ / JETBRAINS
+# =========================
+.idea/
+*.iml
 
-# VIM
-*~
-*.swp
+# =========================
+# JAVA BUILD TOOLS
+# =========================
+# Maven
+target/
 
-# NODE JS
+# Gradle
+.gradle/
+build/
+
+# =========================
+# LOGS
+# =========================
+*.log
+log/
+logs/
+
+# =========================
+# NODE.JS
+# =========================
 node_modules/
 
+# =========================
 # PYTHON
+# =========================
 __pycache__/
 .venv/
 venv/
-.venv
-venv
 db.sqlite3
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# =========================
+# TEMPORARY FILES
+# =========================
+*.swp
+*.swo
+*~
+*#
+
+# =========================
+# VISUAL STUDIO CODE
+# =========================
+.vscode/
+*.code-workspace
+.
