@@ -28,6 +28,7 @@ env/
 ENV/
 env.bak/
 .tool-versions
+.envrc
 
 # =========================
 # INTELLIJ / JETBRAINS
@@ -83,4 +84,4 @@ htmlcov/
 # =========================
 .vscode/
 *.code-workspace
-.
+.b.sqlite3
