@@ -8,7 +8,7 @@
     "editor.autoClosingBrackets": "beforeWhitespace",
     "editor.autoClosingComments": "beforeWhitespace",
     "editor.bracketPairColorization.enabled": true,
-    "editor.cursorBlinking": "smooth",
+    "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 2,
@@ -18,10 +18,10 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 12,
     "editor.fontWeight": "400",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.guides.indentation": false,
-    "editor.hover.delay": 500,
-    "editor.hover.sticky": false,
+    "editor.hover.delay": 300,
+    "editor.hover.sticky": true,
     "editor.inlineSuggest.suppressSuggestions": true,
     "editor.lineHeight": 1.75,
     "editor.linkedEditing": true,
@@ -37,6 +37,7 @@
     "editor.snippetSuggestions": "top",
     "editor.stickyScroll.enabled": true,
     "editor.tabSize": 4,
+    "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 120,
     // Explorer
@@ -44,6 +45,21 @@
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
     "explorer.sortOrder": "type",
     // Extensions
     "extensions.ignoreRecommendations": true,
@@ -54,12 +70,14 @@
         ".prettierrc": "json",
         "*.css": "css"
     },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 0,
     "files.encoding": "utf8",
     "files.enableTrash": true,
     "files.insertFinalNewline": false,
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": false,
     // Git scm
-    "scm.diffDecorations": "none",
+    "scm.diffDecorations": "gutter",
     // Notebook
     "notebook.output.wordWrap": true,
     // Security
@@ -72,18 +90,18 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono'",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.lineHeight": 1.2,
-    "terminal.integrated.tabs.enabled": false,
     // VS Code update
     "update.mode": "default",
     "update.showReleaseNotes": false,
     // Window
     "window.commandCenter": false,
     "window.menuBarVisibility": "toggle",
-    "window.newWindowDimensions": "inherit",
+    "window.newWindowDimensions": "maximized",
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 1,
     // Workbench
@@ -139,7 +157,6 @@
     "workbench.colorTheme": "Hyper Dracula",
     "workbench.editor.enablePreview": true,
     "workbench.editor.showTabs": "multiple",
-    "workbench.iconTheme": "symbols",
     "workbench.layoutControl.enabled": false,
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
@@ -147,13 +164,17 @@
     "workbench.tree.enableStickyScroll": true,
     "workbench.tree.renderIndentGuides": "none",
     // Third-party settings
-    // C/C++ extension
-    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, AlignAfterOpenBracket: BlockIndent, AllowAllParametersOfDeclarationOnNextLine: false, AllowShortBlocksOnASingleLine: Empty, AllowShortFunctionsOnASingleLine: Empty, AlwaysBreakBeforeMultilineStrings: false, BinPackArguments: false, BinPackParameters: false, ColumnLimit: 120, IndentWidth: 4, SortIncludes: CaseInsensitive}",
+    // GitHub Copilot
+    "chat.agent.enabled": false,
     // Code Runner extension
     "code-runner.ignoreSelection": true,
     "code-runner.preserveFocus": false,
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
+    // Git integration
+    "git.autofetch": true,
+    // Python extension
+    "python.analysis.typeCheckingMode": "strict",
     // Symbols extension
     "symbols.hidesExplorerArrows": false,
 }
