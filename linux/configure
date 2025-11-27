@@ -92,7 +92,9 @@ asdf install nodejs latest
 asdf install nodejs latest:22
 
 # Install desired Java versions
-asdf install java openjdk-17.0.2
+asdf install java latest:temurin-17
+asdf install java latest:temurin-21
+asdf install java latest:temurin-25
 
 # Install desired Direnv versions
 asdf install direnv 2.36.0
@@ -103,7 +105,7 @@ asdf install rust stable
 # Set asdf tools versions
 asdf set -u python latest:3.12 
 asdf set -u nodejs latest:22 
-asdf set -u java openjdk-17.0.2
+asdf set -u java latest:temurin-17
 asdf set -u direnv 2.36.0
 asdf set -u rust stable
 
