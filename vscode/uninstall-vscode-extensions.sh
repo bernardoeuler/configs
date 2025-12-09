@@ -1,7 +1,13 @@
-code --uninstall-extension hilalh.hyper-dracula-vscode-theme
-code --uninstall-extension miguelsolorio.symbols
-code --uninstall-extension ms-python.python
-code --uninstall-extension ms-python.vscode-pylance
-code --uninstall-extension ms-vscode-remote.remote-wsl
-code --uninstall-extension naumovs.color-highlight
-code --uninstall-extension ritwickdey.liveserver
+code --uninstall-extension formulahendry.code-runner --force
+code --uninstall-extension grapecity.gc-excelviewer --force
+code --uninstall-extension hilalh.hyper-dracula-vscode-theme --force
+code --uninstall-extension miguelsolorio.symbols --force
+code --uninstall-extension ms-python.debugpy --force
+code --uninstall-extension ms-python.python --force
+code --uninstall-extension ms-python.vscode-pylance --force
+code --uninstall-extension ms-python.vscode-python-envs --force
+code --uninstall-extension naumovs.color-highlight --force
+code --uninstall-extension qwtel.sqlite-viewer --force
+code --uninstall-extension redhat.vscode-yaml --force
+code --uninstall-extension ritwickdey.liveserver --force
+code --uninstall-extension vscodevim.vim --force

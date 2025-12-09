@@ -1,7 +1,14 @@
+call code --install-extension formulahendry.code-runner --force
+call code --install-extension grapecity.gc-excelviewer --force
 call code --install-extension hilalh.hyper-dracula-vscode-theme --force
 call code --install-extension miguelsolorio.symbols --force
+call code --install-extension ms-python.debugpy --force
 call code --install-extension ms-python.python --force
 call code --install-extension ms-python.vscode-pylance --force
+call code --install-extension ms-python.vscode-python-envs --force
 call code --install-extension ms-vscode-remote.remote-wsl --force
 call code --install-extension naumovs.color-highlight --force
+call code --install-extension qwtel.sqlite-viewer --force
+call code --install-extension redhat.vscode-yaml --force
 call code --install-extension ritwickdey.liveserver --force
+call code --install-extension vscodevim.vim --force
