@@ -177,4 +177,6 @@
     "python.analysis.typeCheckingMode": "strict",
     // Symbols extension
     "symbols.hidesExplorerArrows": false,
+    // Vim extension
+    "vim.disableExtension": true
 }
