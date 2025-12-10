@@ -11,7 +11,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install basic packages
-sudo apt install -y curl gcc git gh openssh-client tmux vim zsh
+sudo apt install -y curl gcc git gh openssh-client tmux vim zsh software-properties-common
 
 # Install Neovim's build packages
 sudo apt install -y build-essential cmake gettext ninja-build unzip
@@ -124,6 +124,11 @@ asdf set -u nodejs latest:22
 asdf set -u java latest:temurin-17
 asdf set -u direnv 2.36.0
 asdf set -u rust stable
+
+# Install SWI Prolog
+sudo apt-add-repository ppa:swi-prolog/stable -y
+sudo apt update -y
+sudo apt install swi-prolog -y
 
 # Install Neovim
 git clone https://github.com/neovim/neovim ~/neovim
