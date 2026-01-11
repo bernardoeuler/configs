@@ -157,6 +157,10 @@
     "workbench.colorTheme": "Hyper Dracula",
     "workbench.editor.enablePreview": true,
     "workbench.editor.showTabs": "multiple",
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "workbench.iconTheme": "symbols",
     "workbench.layoutControl.enabled": false,
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
