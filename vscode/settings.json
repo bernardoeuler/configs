@@ -58,7 +58,7 @@
         "*.sqlite3": "${capture}.${extname}-*",
         "*.db3": "${capture}.${extname}-*",
         "*.sdb": "${capture}.${extname}-*",
-        "*.s3db": "${capture}.${extname}-*"
+        "*.s3db": "${capture}.${extname}-*",
     },
     "explorer.sortOrder": "type",
     // Extensions
@@ -68,7 +68,7 @@
         ".dev.vars": "dotenv",
         ".env.*": "dotenv",
         ".prettierrc": "json",
-        "*.css": "css"
+        "*.css": "css",
     },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 0,
@@ -109,7 +109,7 @@
     "workbench.colorCustomizations": {
         "[Hyper Dracula]": {
             "editorStickyScroll.shadow": "#120f18",
-            "titleBar.activeBackground": "#0C0A0F"
+            "titleBar.activeBackground": "#0C0A0F",
         },
         "button.background": "#383342",
         "button.foreground": "#ffffff",
@@ -152,13 +152,13 @@
         "terminal.ansiWhite": "#DCDFE4",
         "terminal.ansiYellow": "#FFB86C",
         "terminal.background": "#120F18",
-        "terminalCursor.foreground": "#913DC9"
+        "terminalCursor.foreground": "#913DC9",
     },
     "workbench.colorTheme": "Hyper Dracula",
     "workbench.editor.enablePreview": true,
     "workbench.editor.showTabs": "multiple",
     "workbench.editorAssociations": {
-        "*.md": "vscode.markdown.preview.editor"
+        "*.md": "vscode.markdown.preview.editor",
     },
     "workbench.iconTheme": "symbols",
     "workbench.layoutControl.enabled": false,
@@ -177,10 +177,16 @@
     "code-runner.saveFileBeforeRun": true,
     // Git integration
     "git.autofetch": true,
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.editorDecoration.template": "${authorName} (${authorDateAgo})",
+    "git.confirmSync": false,
     // Python extension
     "python.analysis.typeCheckingMode": "strict",
     // Symbols extension
     "symbols.hidesExplorerArrows": false,
     // Vim extension
-    "vim.disableExtension": true
+    "vim.disableExtension": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
 }
